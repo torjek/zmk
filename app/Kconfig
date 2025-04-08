@@ -712,6 +712,6 @@ rsource "Kconfig.defaults"
 
 source "Kconfig.zephyr"
 
-config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY
-    int "Default triggers per rotation"
-    default 99
+#config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY
+#    int "Default triggers per rotation"
+#    default 99
