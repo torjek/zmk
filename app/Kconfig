@@ -37,8 +37,6 @@ config BT_DIS_MODEL
 config BT_DIS_MANUF
     default "ZMK Project"
 
-config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY
-    default 99
 # Hardware specific overrides
 
 if SOC_SERIES_NRF52X
@@ -713,3 +711,6 @@ osource "$(ZMK_CONFIG)/boards/shields/*/Kconfig.shield"
 rsource "Kconfig.defaults"
 
 source "Kconfig.zephyr"
+
+config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY
+    int 99
